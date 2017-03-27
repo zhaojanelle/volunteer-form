@@ -5,11 +5,40 @@ html {
 .contact {
 }
 
-header {
+header, footer {
   background-color: #70ad55;
   color: #fff;
 }
 
 body {
   margin: 0;
+}
+
+fieldset {
+  border-top: none;
+}
+
+.green {
+  color: #70ad55;
+}
+
+hr {
+  border: 1px solid #70ad55;
+  opacity: .3;
+}
+
+input, select, input[type="checkbox"] + label::before, input[type="radio"] + label::before, textarea {
+  border-color: #6e8c62;
+}
+
+.apply-btn {
+  background-color: #6e8c62;
+  color: #fff;
+  border: none;
+  padding: .65rem 2.6rem;
+}
+
+hr {
+  margin-left: .65rem;
+  margin-right: .65rem;
 }
