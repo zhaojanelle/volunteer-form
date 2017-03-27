@@ -12,20 +12,20 @@
 </head>
 <body>
 
-  <header class="island-half">
-    <div class="max-length">
-      <h1>Apply to be a tree planter</h1>
-      <p class="mega">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+  <header class="gutter-half">
+    <div class="max-length pad-top pad-bottom">
+      <h1 class="push-half">Apply to be a tree planter</h1>
+      <p class="mega push-half">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
     </div>
   </header>
 
   <section>
-    <div class="max-length">
+    <div class="max-length pad-top">
       <form class="" action="https://formspree.io/zhaojanelle@gmail.com" method="post">
         <fieldset class="push-half">
           <legend class="push pad-top giga gutter-half">Personal details</legend>
           <div class="grid">
-            <div class="unit xs-1 s-1 m-1-2 gutter-half">
+            <div class="unit xs-1 s-1 m-1-2 gutter-half pad-top-quarter">
               <label class="label-block push-eighth" for="name">Full name</label>
               <input id="name" name="name">
               <p class="pad-top-eighth micro"><i>Your full legal name, for insurance purposes, e.g. "Elizabeth Bradley".</i></p>
@@ -36,8 +36,8 @@
               <p class="pad-top-eighth micro"><i>What all your friends call you, e.g. “Liz”</i></p>
             </div>
             <div class="push unit xs-1 s-1 m-1-2 gutter-half">
-              <label class="label-block push-eighth" for="DOB">Date of birth</label>
-              <input id="DOB" type="date" name="DOB" value="">
+              <label class="label-block push-eighth" for="dob">Date of birth</label>
+              <input id="dob" type="date" name="dob" value="">
             </div>
             <div class="push unit xs-1 s-1 m-1-2 gutter-half">
               <label class="push-eighth" for="tshirt">T-shirt size</label>
@@ -70,15 +70,15 @@
         <fieldset>
           <legend class="push pad-top giga gutter-half">Address</legend>
           <div class="grid">
-            <div class="push unit xs-1 s-1 m-1-2 gutter-half">
+            <div class="push unit xs-1 s-1 m-1-2 gutter-half pad-top-quarter">
               <label for="address">Street address</label>
               <input type="text" name="address" id="address">
             </div>
-            <div class="push unit xs-1 s-1 m-1-2 gutter-half">
+            <div class="push unit xs-1 s-1 m-1-2 gutter-half pad-top-quarter">
               <label for="city">City</label>
               <input type="text" name="city" id="city">
             </div>
-            <div class="push unit xs-1 s-1 m-1-2 gutter-half">
+            <div class="push unit xs-1 s-1 m-1-2 gutter-half pad-top-quarter">
               <label for="province">Province</label>
               <select class="" name="province" id="province">
                 <option value="">Select a province</option>
@@ -97,7 +97,7 @@
                 <option value="">Yukon</option>
               </select>
             </div>
-            <div class="push unit xs-1 s-1 m-1-2 gutter-half">
+            <div class="push unit xs-1 s-1 m-1-2 gutter-half pad-top-quarter">
               <label for="postal">Postal code</label>
               <input type="text" name="postal" id="postal">
             </div>
@@ -156,8 +156,8 @@
                 <label for="shovels">Shovels</label>
               </div>
               <div class="xs-1 s-1 m-1 push-quarter">
-                <input type="checkbox" id="GPS" name="experience">
-                <label for="GPS">Hand-held GPS</label>
+                <input type="checkbox" id="gps" name="experience">
+                <label for="gps">Hand-held GPS</label>
               </div>
               <div class="xs-1 s-1 m-1 push-quarter">
                 <input type="checkbox" id="writing" name="experience">
@@ -178,8 +178,8 @@
                 <label for="craft">Bush craft</label>
               </div>
               <div class="xs-1 s-1 m-1 push-quarter">
-                <input type="checkbox" id="ATVs" name="experience">
-                <label for="ATVs">ATVs</label>
+                <input type="checkbox" id="atv" name="experience">
+                <label for="atv">ATVs</label>
               </div>
               <div class="xs-1 s-1 m-1 push-quarter">
                 <input type="checkbox" id="plant" name="experience">
@@ -227,10 +227,11 @@
         </fieldset>
 
         <hr>
-        <fieldset>
-        <legend class="push-half pad-top giga gutter-half">Please let us know any comments or questions you may have.</legend>
+        <fieldset class="push-0">
+          <legend class="push-half pad-top giga gutter-half">Please let us know any comments or questions you may have.</legend>
           <div class="push-2 gutter-half">
-            <label for="comments"></label>
+            <label for="comments">
+            </label>
             <textarea id="comments" name="comments" rows="6" cols="60"></textarea>
           </div>
         </fieldset>
