@@ -2,9 +2,6 @@ html {
   font-family: "Droid Serif", serif;
 }
 
-.contact {
-}
-
 header, footer {
   background-color: #70ad55;
   color: #fff;
@@ -25,6 +22,8 @@ fieldset {
 hr {
   border: 1px solid #70ad55;
   opacity: .3;
+  margin-left: .65rem;
+  margin-right: .65rem;
 }
 
 input, select, input[type="checkbox"] + label::before, input[type="radio"] + label::before, textarea {
@@ -36,9 +35,4 @@ input, select, input[type="checkbox"] + label::before, input[type="radio"] + lab
   color: #fff;
   border: none;
   padding: .65rem 2.6rem;
-}
-
-hr {
-  margin-left: .65rem;
-  margin-right: .65rem;
 }

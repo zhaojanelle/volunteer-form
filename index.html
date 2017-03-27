@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Volunteer Form</title>
-  <link href="css/modular.css" rel="stylesheet">
+  <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
@@ -19,7 +19,7 @@
     </div>
   </header>
 
-  <section class="contact">
+  <section>
     <div class="max-length">
       <form class="" action="https://formspree.io/zhaojanelle@gmail.com" method="post">
         <fieldset class="push-half">
@@ -33,15 +33,15 @@
             <div class=" unit xs-1 s-1 m-1-2 gutter-half">
               <label class="label-block push-eighth" for="nickname">What should we call you?</label>
               <input id="nickname" name="nickname">
-              <p class="pad-top-eighth micro"><i>What all your friends call you, e.g. "Liz"</i></p>
+              <p class="pad-top-eighth micro"><i>What all your friends call you, e.g. “Liz”</i></p>
             </div>
             <div class="push unit xs-1 s-1 m-1-2 gutter-half">
               <label class="label-block push-eighth" for="DOB">Date of birth</label>
-              <input type="date" name="DOB" value="">
+              <input id="DOB" type="date" name="DOB" value="">
             </div>
             <div class="push unit xs-1 s-1 m-1-2 gutter-half">
-              <label class="push-eighth" id="tshirt" for="tshirt">T-shirt size</label>
-              <select class="tshirt" name="shirt">
+              <label class="push-eighth" for="tshirt">T-shirt size</label>
+              <select id="tshirt" class="tshirt" name="shirt">
                 <option value="">Select a t-shirt size</option>
                 <option value="">Fitted: XS</option>
                 <option value="">Fitted: S</option>
@@ -57,11 +57,11 @@
             </div>
             <div class="push unit xs-1 s-1 m-1-2 gutter-half">
               <label class="push-eighth" for="email">Email</label>
-              <input type="email" name="email">
+              <input id="email" type="email" name="email">
             </div>
             <div class="push unit xs-1 s-1 m-1-2 gutter-half">
               <label class="push-eighth" for="phone">Phone number <i class="green">(optional)</i></label>
-              <input type="tel" name="phone">
+              <input id="phone" type="tel" name="phone">
             </div>
           </div>
         </fieldset>
@@ -105,7 +105,7 @@
         </fieldset>
 
         <hr>
-        <fieldset>
+        <fieldset class="push-0">
           <legend class="push-half pad-top giga gutter-half">What activities are you interested in helping with?</legend>
           <div class="grid push">
             <div class="unit xs-1 s-1 m-1-2 gutter-half">
@@ -145,7 +145,9 @@
               </div>
             </div>
           </div>
+        </fieldset>
 
+        <fieldset>
           <legend class="push-half pad-top giga gutter-half">Do you have any experience with the following?</legend>
           <div class="grid push">
             <div class="unit xs-1 s-1 m-1-2 gutter-half">
@@ -199,32 +201,36 @@
         <fieldset>
           <legend class="push-half pad-top giga gutter-half">Do you have a valid driver's license</legend>
           <div class="unit xs-1 s-1 m-1 gutter-half">
-            <input type="radio" id="yes" name="license">
-            <label class="push-right" for="yes">Yes</label>
-            <input type="radio" id="no" name="license">
-            <label for="no">No</label>
+            <input type="radio" id="yes-license" name="license">
+            <label class="push-right" for="yes-license">Yes</label>
+            <input type="radio" id="no-license" name="license">
+            <label for="no-license">No</label>
           </div>
+        </fieldset>
+        <fieldset>
           <legend class="push-half pad-top giga gutter-half">Do you have a pick-up truck you'd be willing to use?</legend>
           <div class="unit xs-1 s-1 m-1 gutter-half">
-            <input type="radio" id="yes" name="truck">
-            <label class="push-right" for="yes">Yes</label>
-            <input type="radio" id="no" name="truck">
-            <label for="no">No</label>
+            <input type="radio" id="yes-truck" name="truck">
+            <label class="push-right" for="yes-truck">Yes</label>
+            <input type="radio" id="no-truck" name="truck">
+            <label for="no-truck">No</label>
           </div>
-          <legend class="push-half pad-top giga gutter-half">Do you have a up-to-date first-aid certification?</legend>
-          <div class="unit xs-1 s-1 m-1 gutter-half">
-            <input type="radio" id="yes" name="firstaid">
-            <label class="push-right" for="yes">Yes</label>
-            <input type="radio" id="no" name="firstaid">
-            <label for="no">No</label>
+        </fieldset>
+        <fieldset>
+          <legend class="push-half pad-top giga gutter-half">Do you have up-to-date first-aid certification?</legend>
+          <div class="unit xs-1 s-1 m-1 gutter-half push">
+            <input type="radio" id="yes-firstaid" name="firstaid">
+            <label class="push-right" for="yes-firstaid">Yes</label>
+            <input type="radio" id="no-firstaid" name="firstaid">
+            <label for="no-firstaid">No</label>
           </div>
         </fieldset>
 
         <hr>
         <fieldset>
-          <legend class="push-half pad-top giga gutter-half">Please let us know any comments or questions you may have.</legend>
-          <div class="push gutter-half">
-            <label for=""></label>
+        <legend class="push-half pad-top giga gutter-half">Please let us know any comments or questions you may have.</legend>
+          <div class="push-2 gutter-half">
+            <label for="comments"></label>
             <textarea id="comments" name="comments" rows="6" cols="60"></textarea>
           </div>
         </fieldset>
@@ -235,6 +241,6 @@
       </form>
     </div>
   </section>
-  <footer class="milli island-half">© Tree Hugger International Organization</footer>
+  <footer class="milli gutter-half pad-top pad-bottom">© Tree Hugger International Organization</footer>
 </body>
 </html>
